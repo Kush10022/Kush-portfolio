@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
 import Nav from "./Nav";
+import MobileNav from "./MobileNav";
 
 const Header = () => {
   return (
@@ -22,7 +23,9 @@ const Header = () => {
         </div>
 
         {/* Mobile Navigation */}
-        <div className="xl:hidden">mobile Navigation</div>
+        <div className="xl:hidden">
+          <MobileNav />
+        </div>
       </div>
     </header>
   );
