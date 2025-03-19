@@ -92,10 +92,9 @@ const Contact = () => {
             >
               <h3 className="text-4xl text-accent">Let's work together</h3>
               <p className="text-white/60">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Exercitationem quas nesciunt odio in officia obcaecati eveniet,
-                ab amet fugit rem nulla iure harum eaque dolore, veniam autem
-                dignissimos dolor doloremque?
+              I am always open to discussing new projects, ideas, or collaboration opportunities. Whether you are looking for a full-stack 
+              developer, need help with a web application, or have a technical challenge in mind, feel free to reach out. 
+              Let's connect and build something amazing!
               </p>
               <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
                 <Input
