@@ -1,20 +1,17 @@
 "use client";
 
 import {
-  FaHtml5,
-  FaCss3,
   FaJs,
   FaReact,
-  FaFigma,
-  FaNodeJs,
+  FaNodeJs
 } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import { SiTailwindcss, SiNextdotjs, SiDocker, SiExpress, SiMongodb, SiGithub, SiTypescript, SiPython, SiFirebase } from "react-icons/si";
 
 const about = {
   title: "About Me",
-  Description:
-    "I am a software developer with a passion for web development. I am excel at crafting elegent digital experience and I do have the knowledge of different programming language and I am always ready to learn new things.",
-
+  Description: `Hey, I am Kush Patel — a software development student at Seneca Polytechnic and a fast learner with a curious mindset.
+  I started with zero experience — never used a computer before — but within one semester, I was building full-stack applications. I learn by understanding concepts deeply, always asking why something works.I have worked on real-world projects like a PSW support platform, a dynamic portfolio, and tools like an expense tracker and Chrome extension. I also love helping others learn as a peer tutor and SLG leader.
+  Outside of coding, I am all about exploring new tech and recharging with games to stay sharp and focused.`,
   info: [
     {
       fieldname: "Name:",
@@ -82,14 +79,6 @@ const Skills = {
     "I have the knowledge of different programming languages and tools.",
   skillList: [
     {
-      name: "HTML 5",
-      icon: <FaHtml5 />,
-    },
-    {
-      name: "CSS 3",
-      icon: <FaCss3 />,
-    },
-    {
       name: "Javascript",
       icon: <FaJs />,
     },
@@ -102,16 +91,40 @@ const Skills = {
       icon: <SiTailwindcss />,
     },
     {
-      name: "Figma",
-      icon: <FaFigma />,
-    },
-    {
       name: "Node js",
       icon: <FaNodeJs />,
     },
     {
       name: "Next js",
       icon: <SiNextdotjs />,
+    },
+    {
+      name: "Docker",
+      icon: <SiDocker />,
+    },
+    {
+      name: "Express js",
+      icon: <SiExpress />,
+    },
+    {
+      name: "MongoDB",
+      icon: <SiMongodb />,
+    },
+    {
+      name: "GitHub",
+      icon: <SiGithub />,
+    },
+    {
+      name: "Typescript(Learning Phase)",
+      icon: <SiTypescript />,
+    },
+    {
+      name: "Python",
+      icon: <SiPython />,
+    },
+    {
+      name: "Firebase",
+      icon: <SiFirebase/>,
     },
   ],
 };
@@ -254,10 +267,15 @@ const Resume = () => {
             >
               <div className="flex flex-col gap-[30px]">
                 <h3 className="text-4xl font-bold">{about.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{about.Description}</p>
+                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                  {about.Description}
+                </p>
                 <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
                   {about.info.map((item, index) => (
-                    <li key={index} className="flex justify-center items-center xl:justify-start gap-4">
+                    <li
+                      key={index}
+                      className="flex justify-center items-center xl:justify-start gap-4"
+                    >
                       <span className="text-white/60">{item.fieldname}</span>
                       <span className="text-xl">{item.fieldvalue}</span>
                     </li>
