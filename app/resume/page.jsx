@@ -13,7 +13,7 @@ import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 const about = {
   title: "About Me",
   Description:
-    "I am a software developer with a passion for web development. I am excel at crafting elegent digital experience and I do have the knowledge of diffenrent programming language and I am always ready to learn new things.",
+    "I am a software developer with a passion for web development. I am excel at crafting elegent digital experience and I do have the knowledge of different programming language and I am always ready to learn new things.",
 
   info: [
     {

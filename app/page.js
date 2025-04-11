@@ -18,7 +18,7 @@ const Home = () => {
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
               I am excel at crafting elegent digital experience and I do have
-              the knowledge of diffenrent programming language and I am always
+              the knowledge of different programming language and I am always
               ready to learn new things. I am a software developer with a
               passion for web development.
             </p>
