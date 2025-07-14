@@ -53,8 +53,8 @@ const experience = {
       duration: "Winter 2025",
     },
     {
-      company: "Seneca Polytechnic",
-      position: "SLG Leader(Intern)",
+      company: "Good Tiffan",
+      position: "Full Stack Developer(Intern)",
       duration: "Summer 2024",
     },
   ],
