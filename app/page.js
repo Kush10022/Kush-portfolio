@@ -28,7 +28,7 @@ const Home = () => {
                 className="uppercase flex items-center gap-2 text-accent hover:text-primary"
                 asChild
               >
-                <a href="/assets/resume/Kush_Patel_Resume.pdf" download="Kush_Patel_Resume.pdf">
+                <a href="/assets/resume/Kush_Patel_Resume.docx" download="Kush_Patel_Resume.docx">
                   <span>Download Resume</span>
                   <FiDownload className="text-xl" />
                 </a>
