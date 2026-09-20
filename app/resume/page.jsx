@@ -3,15 +3,16 @@
 import {
   FaJs,
   FaReact,
-  FaNodeJs
+  FaNodeJs,
+  FaDatabase,
+  FaChartBar,
+  FaFileExcel
 } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs, SiDocker, SiExpress, SiMongodb, SiGithub, SiTypescript, SiPython, SiFirebase } from "react-icons/si";
+import { SiTailwindcss, SiNextdotjs, SiDocker, SiExpress, SiMongodb, SiGithub, SiPython, SiFirebase } from "react-icons/si";
 
 const about = {
   title: "About Me",
-  Description: `Hey, I am Kush Patel — a software development student at Seneca Polytechnic and a fast learner with a curious mindset.
-  I started with zero experience — never used a computer before — but within one semester, I was building full-stack applications. I learn by understanding concepts deeply, always asking why something works.I have worked on real-world projects like a PSW support platform, a dynamic portfolio, and tools like an expense tracker and Chrome extension. I also love helping others learn as a peer tutor and SLG leader.
-  Outside of coding, I am all about exploring new tech and recharging with games to stay sharp and focused.`,
+  Description: `I am Kush Patel, a financial data analyst and software development graduate. At Compass Group Canada, I analyze financial performance across multiple dining units, prepare forecasts and variance reports, and build Excel reports for business decisions. I also develop full-stack projects and use SQL and Power BI to make data easier to understand.`,
   info: [
     {
       fieldname: "Name:",
@@ -22,8 +23,8 @@ const about = {
       fieldvalue: "+1 (647)-773-2116",
     },
     {
-      fieldname: "Projects:",
-      fieldvalue: "10+",
+      fieldname: "Focus:",
+      fieldvalue: "Analytics & web development",
     },
     {
       fieldname: "Email:",
@@ -40,22 +41,19 @@ const experience = {
   icon: "👨‍💻",
   title: "My Experience",
   description:
-    "I have worked on multiple projects and have experience in web development.",
+    "My professional work focuses on financial analysis, reporting, and data quality. My software projects demonstrate my full-stack development skills.",
   items: [
     {
-      company: "Seneca Polytechnic",
-      position: "Peer tutor(Part Time)",
-      duration: "September 2024 - Present",
+      company: "Compass Group Canada",
+      position: "Financial Data Analyst",
+      duration: "May 2025 - Present",
+      details: "Support FP&A, budgeting and forecasting across dining units. Analyze P&L results, sales and expense variances; prepare financial reports and reconcile records across CIMS, Orbit and Transact.",
     },
     {
-      company: "Seneca Polytechnic",
-      position: "SLG Leader(Intern)",
-      duration: "Winter 2025",
-    },
-    {
-      company: "Good Tiffan",
-      position: "Full Stack Developer(Intern)",
-      duration: "Summer 2024",
+      company: "Genious Infotech",
+      position: "Data Analyst - Co-op",
+      duration: "September 2024 - May 2025",
+      details: "Developed SQL reporting, validated datasets, and worked with stakeholders to improve recurring reports using Python, Excel and Power BI.",
     },
   ],
 };
@@ -64,19 +62,19 @@ const Education = {
   icon: "🎓",
   title: "My Education",
   description:
-    "Completed my Bachelor degree in Software Development from Seneca polytechnic. ",
+    "Completed an Honours Bachelor of Technology in Software Development at Seneca Polytechnic.",
   items: [
     {
       institution: "Seneca Polytechnic",
-      degree: "BSD (Hounours Bachelor of technology - Software Development)",
-      duration: "September 2021 - Present",
+      degree: "Honours Bachelor of Technology - Software Development",
+      duration: "September 2021 - August 2025",
     },
   ],
 };
 const Skills = {
   title: "My Skills",
   description:
-    "I have the knowledge of different programming languages and tools.",
+    "Tools I use for financial reporting, data analysis and full-stack projects.",
   skillList: [
     {
       name: "Javascript",
@@ -115,12 +113,20 @@ const Skills = {
       icon: <SiGithub />,
     },
     {
-      name: "Typescript(Learning Phase)",
-      icon: <SiTypescript />,
+      name: "SQL",
+      icon: <FaDatabase />,
     },
     {
       name: "Python",
       icon: <SiPython />,
+    },
+    {
+      name: "Power BI",
+      icon: <FaChartBar />,
+    },
+    {
+      name: "Excel",
+      icon: <FaFileExcel />,
     },
     {
       name: "Firebase",
@@ -179,21 +185,22 @@ const Resume = () => {
                 <p className="max-h-[600px] text-white/60 mx-auto xl:mx-0">
                   {experience.description}
                 </p>
-                <ScrollArea className="h-[400px]">
-                  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                <ScrollArea className="h-[430px]">
+                  <ul className="grid grid-cols-1 gap-[20px] pr-4">
                     {experience.items.map((item, index) => (
                       <li
                         key={index}
-                        className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                        className="bg-[#232329] min-h-[184px] py-6 px-8 rounded-xl flex flex-col justify-center items-center lg:items-start gap-2"
                       >
                         <span className="text-accent">{item.duration}</span>
-                        <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
+                        <h3 className="text-xl text-center lg:text-left">
                           {item.position}
                         </h3>
                         <div className="flex items-center gap-3">
                           <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
                           <p className="text-white/60">{item.company}</p>
                         </div>
+                        <p className="text-sm text-white/60 text-center lg:text-left">{item.details}</p>
                       </li>
                     ))}
                   </ul>
